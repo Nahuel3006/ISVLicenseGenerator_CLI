@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AASAXUtilLib", "AASAXUtilLi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISVLicenseGenerator", "ISVLicenseGenerator\ISVLicenseGenerator.csproj", "{789B9C92-8DB0-4B42-AB77-2E1C897B6056}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISVLicenseGenerator_CLI", "testGenerateLicense\ISVLicenseGenerator_CLI.csproj", "{C4AE2406-DB84-4A47-AD38-45577CA5E2AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISVLicenseGenerator_CLI", "ISVLicenseGeneratorCLI\ISVLicenseGenerator_CLI.csproj", "{FA10C349-D105-24B7-A115-C1CE294D9EB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{789B9C92-8DB0-4B42-AB77-2E1C897B6056}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{789B9C92-8DB0-4B42-AB77-2E1C897B6056}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{789B9C92-8DB0-4B42-AB77-2E1C897B6056}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C4AE2406-DB84-4A47-AD38-45577CA5E2AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C4AE2406-DB84-4A47-AD38-45577CA5E2AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C4AE2406-DB84-4A47-AD38-45577CA5E2AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C4AE2406-DB84-4A47-AD38-45577CA5E2AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA10C349-D105-24B7-A115-C1CE294D9EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA10C349-D105-24B7-A115-C1CE294D9EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA10C349-D105-24B7-A115-C1CE294D9EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA10C349-D105-24B7-A115-C1CE294D9EB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

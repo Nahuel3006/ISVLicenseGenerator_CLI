@@ -1,7 +1,7 @@
 ﻿using System;
 using AASAXUtilLib;
 
-namespace testGenerateLicense
+namespace isvLicenseGenerator_CLI
 {
     internal class Program
     {
