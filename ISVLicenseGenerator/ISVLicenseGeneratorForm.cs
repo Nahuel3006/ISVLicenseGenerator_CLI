@@ -123,7 +123,7 @@ namespace ISVLicenseGeneratorCore
             }
         }
 
-        private void GenerateLicenseKeyVault()
+        public void GenerateLicenseKeyVault()
         {
             LicenseInfo licenseInfo = new LicenseInfo
             {
