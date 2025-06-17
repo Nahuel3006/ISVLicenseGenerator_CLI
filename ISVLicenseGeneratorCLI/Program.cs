@@ -9,7 +9,14 @@ namespace isvLicenseGenerator_CLI
         {
             if (args.Length < 11)
             {
-                Console.WriteLine("Uso: <path> <licenseCode> <customer> <serialNumber> <expirationDate yyyy-MM-dd> <userCount> <vaultName> <keyName> <tenantId> <appId> <secret>");
+                Console.WriteLine("Uso: <path> <licenseCode> <customer> <serialNumber> <expirationDate MM-dd-yyyy> <userCount> <vaultName> <keyName> <tenantId> <appId> <secret>");
+                return;
+            }
+
+            string[] formatosFecha = { "MM-dd-yyyy", "MM/dd/yyyy" };
+            if (!DateTime.TryParseExact(args[4], formatosFecha, System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, out DateTime expiration))
+            {
+                Console.WriteLine("Error: el formato de fecha debe ser MM-dd-yyyy o MM/dd/yyyy (ejemplo: 06-12-2025 o 06/12/2025)");
                 return;
             }
 
@@ -20,7 +27,7 @@ namespace isvLicenseGenerator_CLI
                 Customer = args[2],
                 SerialNumber = args[3],
                 Timestamp = DateTime.Now,
-                ExpirationDate = DateTime.Parse(args[4]),
+                ExpirationDate = expiration,
                 UserCount = int.Parse(args[5])
             };
 
